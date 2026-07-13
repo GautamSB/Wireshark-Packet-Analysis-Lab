@@ -409,23 +409,3 @@ Findings include:
 This assessment successfully demonstrated the practical use of Wireshark for packet capture and protocol analysis in a controlled penetration testing laboratory. Multiple protocols including ARP, ICMP, TCP, DNS, HTTP, FTP, Telnet, and SMB were analyzed to understand how devices communicate across a network. The captured traffic highlighted the risks associated with legacy protocols that transmit sensitive information in plaintext and reinforced the importance of secure communication protocols in modern network environments.
 
 ---
-
-# Learning Outcomes
-
-After completing this assessment, the following skills were developed:
-
-- Packet capture using Wireshark
-- Applying display filters
-- TCP/IP protocol analysis
-- DNS resolution analysis
-- HTTP request and response inspection
-- FTP authentication analysis
-- Telnet session analysis
-- SMB share enumeration
-- TCP handshake analysis
-- Network troubleshooting
-- Identifying insecure protocols
-- Understanding packet headers and payloads
-- Practical traffic analysis in a virtual lab
-
----
