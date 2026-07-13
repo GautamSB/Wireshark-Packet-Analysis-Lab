@@ -33,21 +33,6 @@ The objective of this assessment was to capture and analyze network traffic gene
 
 ---
 
-# Methodology
-
-The following methodology was used during the assessment:
-
-1. Configured both virtual machines on the same bridged network.
-2. Started packet capture on the active network interface (eth0).
-3. Generated different types of network traffic.
-4. Applied Wireshark display filters.
-5. Examined protocol headers.
-6. Verified client-server communication.
-7. Documented observations.
-8. Captured screenshots for reporting.
-
----
-
 # Protocol Analysis
 
 The following protocols were analyzed during the assessment.
