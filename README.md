@@ -97,9 +97,9 @@ The packet captures successfully demonstrated:
 - HTTP GET request
 - Packet filtering techniques
   
-# 📄 Detailed Report
+## 📄 Detailed Report
 
-See **REPORT.md** for the complete packet analysis and observations.
+For the complete assessment, findings, and results, see **[REPORT.md](REPORT.md)**.
 
 ---
 
