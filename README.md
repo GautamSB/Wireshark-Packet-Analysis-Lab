@@ -2,24 +2,27 @@
 
 ## 📖 Overview
 
-This repository demonstrates the use of **Wireshark** for capturing, filtering, and analyzing network traffic in a controlled virtual lab environment.
+This repository demonstrates the use of **Wireshark** to capture, filter, and analyze network traffic in a controlled virtual lab environment.
 
-The project focuses on understanding common network protocols, examining packet structures, and learning how packet analysis supports network troubleshooting and cybersecurity investigations.
+The assessment focuses on understanding how common network protocols operate, examining packet structures, inspecting client-server communication, and identifying security risks associated with unencrypted protocols.
 
 ---
 
 # 🎯 Objective
 
-The objectives of this lab are:
+The objectives of this assessment were to:
 
 - Capture live network traffic
 - Analyze common network protocols
-- Understand packet flow
-- Inspect TCP communication
-- Analyze HTTP and FTP traffic
-- Observe DNS resolution
+- Understand packet flow and communication
+- Examine the TCP Three-Way Handshake
+- Analyze DNS query and response
+- Inspect HTTP requests and responses
+- Capture FTP authentication traffic
+- Analyze Telnet communication
+- Enumerate SMB shares and sessions
 - Apply Wireshark display filters
-- Document observations
+- Document observations and security findings
 
 ---
 
@@ -35,12 +38,15 @@ The objectives of this lab are:
 
 ---
 
-# 🛠 Tools Used
+# 🛠️ Tools Used
 
 - Kali Linux
 - Wireshark
 - VMware Workstation
 - Metasploitable2
+- FTP Client
+- Telnet
+- SMBClient
 
 ---
 
@@ -48,14 +54,14 @@ The objectives of this lab are:
 
 The assessment followed these steps:
 
-1. Start packet capture.
-2. Generate network traffic.
-3. Apply protocol filters.
-4. Inspect packets.
-5. Analyze protocol behavior.
-6. Document observations.
-7. Capture screenshots.
-8. Summarize findings.
+1. Configure the lab environment.
+2. Start packet capture on the active network interface.
+3. Generate protocol-specific network traffic.
+4. Apply Wireshark display filters.
+5. Inspect protocol headers and packet details.
+6. Analyze client-server communication.
+7. Capture screenshots of significant findings.
+8. Document observations and security implications.
 
 ---
 
@@ -65,23 +71,31 @@ The assessment followed these steps:
 - ICMP
 - TCP
 - DNS
-- FTP
 - HTTP
+- FTP
+- Telnet
+- SMB
 
 ---
 
-# 🔎 Wireshark Filters Used
+# 🔎 Wireshark Display Filters Used
 
 | Filter | Purpose |
 |---------|---------|
-| arp | Display ARP packets |
-| icmp | Display ICMP packets |
-| tcp | Display TCP traffic |
-| ftp | Display FTP packets |
-| dns | Display DNS traffic |
-| http | Display HTTP packets |
-| ip.addr==192.168.0.10 | Filter packets for target |
-| tcp.port==21 | FTP traffic |
+| `arp` | Display ARP packets |
+| `icmp` | Display ICMP packets |
+| `tcp` | Display TCP traffic |
+| `dns` | Display DNS queries and responses |
+| `http` | Display HTTP traffic |
+| `ftp` | Display FTP communication |
+| `telnet` | Display Telnet sessions |
+| `smb` | Display SMB packets |
+| `smb2` | Display SMBv2 packets |
+| `ip.addr == 192.168.0.14` | Filter target traffic |
+| `tcp.port == 21` | FTP traffic |
+| `tcp.port == 23` | Telnet traffic |
+| `tcp.port == 80` | HTTP traffic |
+| `tcp.port == 445` | SMB traffic |
 
 ---
 
@@ -89,42 +103,41 @@ The assessment followed these steps:
 
 The packet captures successfully demonstrated:
 
-- ARP request and reply
-- ICMP Echo Request and Reply
+- ARP Request and Reply
+- ICMP Echo Request and Echo Reply
 - TCP Three-Way Handshake
-- FTP authentication
-- DNS query and response
-- HTTP GET request
-- Packet filtering techniques
-  
-## 📄 Detailed Report
-
-For the complete assessment, findings, and results, see **[REPORT.md](REPORT.md)**.
+- DNS Query and Response
+- HTTP GET and POST Requests
+- FTP Authentication
+- Telnet Login Session
+- SMB Share Enumeration
+- SMB Anonymous Share Access
+- Packet filtering and protocol analysis
 
 ---
 
-# 🛡 Recommendations
+# 📄 Detailed Report
 
-- Replace FTP with SFTP.
-- Use HTTPS instead of HTTP.
-- Monitor suspicious network traffic.
-- Secure sensitive services.
-- Encrypt network communication.
+A detailed assessment report containing methodology, packet analysis, observations, security findings, and recommendations is available in **[REPORT.md](REPORT.md)**.
 
 ---
 
 # 📖 Learning Outcomes
 
-After completing this lab, I learned:
+After completing this assessment, I gained practical experience in:
 
-- Packet capture techniques
-- Protocol analysis
-- Display filters
-- TCP/IP communication
-- DNS resolution
-- HTTP communication
-- FTP authentication
+- Packet capture using Wireshark
+- Applying display filters
+- TCP/IP communication analysis
+- TCP Three-Way Handshake
+- DNS resolution analysis
+- HTTP request and response inspection
+- FTP authentication analysis
+- Telnet session analysis
+- SMB share enumeration
+- Packet header analysis
 - Network troubleshooting
+- Identifying insecure network protocols
 
 ---
 
@@ -134,4 +147,4 @@ After completing this lab, I learned:
 
 Aspiring Cybersecurity Engineer | VAPT Enthusiast
 
-GitHub: https://github.com/GautamSB
+**GitHub:** https://github.com/GautamSB
