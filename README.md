@@ -80,7 +80,7 @@ The assessment followed these steps:
 | ftp | Display FTP packets |
 | dns | Display DNS traffic |
 | http | Display HTTP packets |
-| ip.addr==192.168.0.12 | Filter packets for target |
+| ip.addr==192.168.0.10 | Filter packets for target |
 | tcp.port==21 | FTP traffic |
 
 ---
