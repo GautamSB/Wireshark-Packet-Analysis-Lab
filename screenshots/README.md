@@ -1,4 +1,4 @@
-# Screenshots
+  # Screenshots
 
 This directory contains screenshots captured during the Wireshark Packet Analysis Lab.
 
@@ -10,6 +10,6 @@ This directory contains screenshots captured during the Wireshark Packet Analysi
 - `dns_query_response.png`
 - `http_get_request.png`
 - `http_post_login_dvwa.png`
-- `ftp_authentication.png`
-- `telnet_login_session.png`
+- `ftp_credentials.png`
+- `telnet_session.png`
 - `smb_share_enumeration.png`
